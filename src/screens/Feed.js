@@ -18,56 +18,33 @@ export default function Feed() {
       <Logo />
       <Header>Foodies Feed</Header>
       <Paragraph>
-        @jami
+        @byron
       </Paragraph>
       
       <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-      
-        <Text style={styles.text}>
-          Nud Pob on Commonwealth Ave is so good!
-          I love it
-        </Text>
-        <FeedPic></FeedPic>
-      </ScrollView>
-    </SafeAreaView>
-
-    <Paragraph>
-        @nancy
-      </Paragraph>
-
-
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-      
-        <Text style={styles.text}>
-          Nud Pob on Commonwealth Ave is so good!
-          
-        </Text>
+        <ScrollView style={styles.scrollView}>
         
+          <Text style={styles.text}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Text>
+          <FeedPic></FeedPic>
+        </ScrollView>
+      </SafeAreaView>
 
-      </ScrollView>
-    </SafeAreaView>
 
-    <Paragraph>
-        @byron
-      </Paragraph>
-
-
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-      
-        <Text style={styles.text}>
-          Vejigantes for the win.
-        </Text>
-      </ScrollView>
-    </SafeAreaView>
     
       
       <Button mode="outlined" onPress={logoutUser}>
         Logout
       </Button>
     </Background>
+    
   ) }
     
     
@@ -75,16 +52,16 @@ export default function Feed() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    //paddingTop: StatusBar.currentHeight,
-    width: 300,
-    height: 200
+    paddingTop: StatusBar.currentHeight,
+    // width: 300,
+    // height: 200
   },
   scrollView: {
     backgroundColor: 'pink',
     marginHorizontal: 20,
   },
   text: {
-    fontSize: 20,
+    fontSize: 30,
   },
 
 });
