@@ -10,7 +10,7 @@ export default function Dashboard() {
   return (
     <Background>
       <Logo />
-      <Header>Let’s start</Header>
+      <Header>Foodies Feed</Header>
       <Paragraph>
         Your amazing app starts here. Open you favorite code editor and start
         editing this project.
