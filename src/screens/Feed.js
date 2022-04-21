@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView, ScrollView, StatusBar } from 'react-native';
-import Background from '../components/Background'
-import Logo from '../components/Logo'
+import SecondBackground from '../components/SecondBackground'
+import HeaderLogo from '../components/HeaderLogo'
 import Header from '../components/Header'
 import Paragraph from '../components/Paragraph'
 import Button from '../components/Button'
@@ -9,16 +9,11 @@ import { logoutUser } from '../api/auth-api'
 import InfiniteScroll from 'react-infinite-scroll-component' 
 import FeedPic from '../components/FeedPic'
 
-
-
-
 export default function Feed() {
   return (
-  <Background>
-      <Logo />
+  <SecondBackground>
+      <HeaderLogo />
       <Header>Foodies Feed</Header>
-      
-      
       <SafeAreaView style={styles.container}>
         <ScrollView style={styles.scrollView}>
         <Paragraph style={styles.userText}>
@@ -32,14 +27,7 @@ export default function Feed() {
       <FeedPic style={styles.pic}></FeedPic>
         </ScrollView>
       </SafeAreaView>
-
-
-    
-      
-      <Button mode="outlined" onPress={logoutUser}>
-        Logout
-      </Button>
-    </Background>
+    </SecondBackground>
     
   ) }
     
@@ -49,13 +37,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: StatusBar.currentHeight,
+    top: 60,
 
     // width: 300,
     // height: 200
   },
   scrollView: {
-    backgroundColor: '#EDC584',
-    marginHorizontal: 5,
+    backgroundColor: '#FFFFFF',
+    marginHorizontal: 0,
   },
   text: {
     fontSize: 30,
@@ -68,7 +57,7 @@ const styles = StyleSheet.create({
   pic: {
     width: 200,
     height: 600,
-    padding: 20,
+    padding: 30,
   }
 
 
