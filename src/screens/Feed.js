@@ -17,57 +17,30 @@ export default function Feed() {
   <Background>
       <Logo />
       <Header>Foodies Feed</Header>
-      <Paragraph>
-        @jami
-      </Paragraph>
+      
       
       <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-      
-        <Text style={styles.text}>
-          Nud Pob on Commonwealth Ave is so good!
-          I love it
-        </Text>
-        <FeedPic></FeedPic>
-      </ScrollView>
-    </SafeAreaView>
-
-    <Paragraph>
-        @nancy
-      </Paragraph>
-
-
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-      
-        <Text style={styles.text}>
-          Nud Pob on Commonwealth Ave is so good!
-          
-        </Text>
-        
-
-      </ScrollView>
-    </SafeAreaView>
-
-    <Paragraph>
+        <ScrollView style={styles.scrollView}>
+        <Paragraph style={styles.userText}>
         @byron
       </Paragraph>
+      <FeedPic style={styles.pic}></FeedPic>
+
+      <Paragraph style={styles.userText}>
+        @jami
+      </Paragraph>
+      <FeedPic style={styles.pic}></FeedPic>
+        </ScrollView>
+      </SafeAreaView>
 
 
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-      
-        <Text style={styles.text}>
-          Vejigantes for the win.
-        </Text>
-      </ScrollView>
-    </SafeAreaView>
     
       
       <Button mode="outlined" onPress={logoutUser}>
         Logout
       </Button>
     </Background>
+    
   ) }
     
     
@@ -75,17 +48,29 @@ export default function Feed() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    //paddingTop: StatusBar.currentHeight,
-    width: 300,
-    height: 200
+    paddingTop: StatusBar.currentHeight,
+
+    // width: 300,
+    // height: 200
   },
   scrollView: {
-    backgroundColor: 'pink',
-    marginHorizontal: 20,
+    backgroundColor: '#EDC584',
+    marginHorizontal: 5,
   },
   text: {
-    fontSize: 20,
+    fontSize: 30,
   },
+  userText: {
+    textAlign: 'left',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  pic: {
+    width: 200,
+    height: 600,
+    padding: 20,
+  }
+
 
 });
 

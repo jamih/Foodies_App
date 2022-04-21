@@ -1,6 +1,6 @@
 import React from 'react'
 import { Provider } from 'react-native-paper'
-import { NavigationContainer } from '@react-navigation/native'
+import { NavigationContainer, TabActions } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -16,10 +16,22 @@ import {
 } from './src/screens'
 import { FIREBASE_CONFIG } from './src/core/config'
 
+
 const Stack = createStackNavigator()
 if (!firebase.apps.length) {
   firebase.initializeApp(FIREBASE_CONFIG)
 }
+
+
+// export default function Home() {
+//   return (
+//     <Tab.Navigator screenOptions={{ headerShown: false }}>
+      
+//     </Tab.Navigator>
+//   );
+// }
+
+
 
 export default function App() {
   return (
@@ -45,7 +57,10 @@ export default function App() {
           />
           <Stack.Screen name="Feed" component={Feed} />
         </Stack.Navigator>
+
+        
       </NavigationContainer>
+     
     </Provider>
   )
 }
