@@ -9,6 +9,7 @@
 
 ### Table of Contents:
 * [Project Overview](#projectoverview)
+* [App Screens](#appscreens)
 * [Implementations](#implementations)
 * [Running the Project](#runningapp)
 
@@ -19,6 +20,15 @@
     * Users can post pictures of their meals when they go to new restaurants
     * Users can write a review of the meals they had at the restaurant.
     * Users can tag the location of the restaurant for future reference.
+
+<a name="appscreens"></a> 
+### App Screens
+
+![Home](/screenshots/home-screen.png)
+![Login](/screenshots/2.png)
+![Index](/screenshots/index-screen.png)
+![Camera](/screenshots/camera-screen.png)
+![Profile](/screenshots/profile-screen.png)
 
 
 
