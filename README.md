@@ -43,9 +43,9 @@ When designing the app, we used Canva to visualize which buttons we wanted to in
 
 <a name="runningapp"></a> 
  
- #### Running the App 
+ ### Running the App 
 
-Make sure you have XCode installed.
+Make sure you have XCode installed before proceeding to the next steps.
  
  ```
  git clone https://github.com/jamih/Foodies_App.git
