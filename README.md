@@ -24,13 +24,9 @@
 <a name="appscreens"></a> 
 ### App Screens
 
-![Home](/screenshots/home-screen.png)
-![Login](/screenshots/2.png)
-![Index](/screenshots/index-screen.png)
-![Camera](/screenshots/camera-screen.png)
-![Profile](/screenshots/profile-screen.png)
 
 
+<img src="/screenshots/home-screen.png" width="100" height="200">
 
 
    
