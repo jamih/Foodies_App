@@ -25,11 +25,19 @@
 ### App Screens
 
 
-
+#### Home Screen with Login and Sign Up
 <img src="/screenshots/home-screen.png" width="400" height="800">
+
+#### Home Screen with Username and Password
 <img src="/screenshots/2.png" width="400" height="800">
+
+#### Posts Screen
 <img src="/screenshots/index-screen.png" width="400" height="800">
+
+#### Camera Screen
 <img src="/screenshots/camera-screen.png" width="400" height="800">
+
+#### User Profile Screen
 <img src="/screenshots/profile-screen.png" width="400" height="800">
 
 
