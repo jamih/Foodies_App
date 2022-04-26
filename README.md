@@ -9,7 +9,7 @@
 
 ### Table of Contents:
 * [Project Overview](#projectoverview)
-* [App Screens](#appscreens)
+* [Initial Design](#initialdesign)
 * [Implementations](#implementations)
 * [Running the Project](#runningapp)
 
@@ -21,8 +21,10 @@
     * Users can write a review of the meals they had at the restaurant.
     * Users can tag the location of the restaurant for future reference.
 
-<a name="appscreens"></a> 
-### App Screens
+<a name="initialdesign"></a> 
+### Initial Design
+
+When designing the app, we used Canva to visualize which buttons we wanted to include and what each of the screens would look like.
 
 
 #### Home Screen with Login and Sign Up
