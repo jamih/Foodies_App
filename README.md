@@ -43,7 +43,7 @@ When designing the app, we used Canva to visualize which buttons we wanted to in
 
 <a name="runningapp"></a> 
  
- ### Running the App 
+ ### Running the Project 
 
 Make sure you have XCode installed before proceeding to the next steps.
  
