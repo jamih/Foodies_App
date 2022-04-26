@@ -10,7 +10,6 @@
 ### Table of Contents:
 * [Project Overview](#projectoverview)
 * [Initial Design](#initialdesign)
-* [Implementations](#implementations)
 * [Running the Project](#runningapp)
 
 <a name="projectoverview"></a> 
@@ -22,7 +21,7 @@
     * Users can tag the location of the restaurant for future reference.
 
 <a name="initialdesign"></a> 
-### Initial Design
+### Initial UI Design
 
 When designing the app, we used Canva to visualize which buttons we wanted to include and what each of the screens would look like.
 
@@ -41,6 +40,31 @@ When designing the app, we used Canva to visualize which buttons we wanted to in
 
 #### User Profile Screen
 <img src="/screenshots/profile-screen.png" width="400" height="800">
+
+<a name="runningapp"></a> 
+ 
+ #### Running the App 
+
+Make sure you have XCode installed.
+ 
+ ```
+ git clone https://github.com/jamih/Foodies_App.git
+ ```
+
+ ```
+ yarn install
+ ```
+
+ ```
+ expo start
+ ```
+
+  ```
+ In the terminal, choose whether you would like to run the app on a simulator or on a phone. 
+ ```
+
+ The app should then be running on the simulator/phone.
+
 
 
 
