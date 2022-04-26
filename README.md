@@ -26,11 +26,11 @@
 
 
 
-<img src="/screenshots/home-screen.png" width="200" height="400">
-<img src="/screenshots/2.png" width="200" height="400">
-<img src="/screenshots/index-screen.png" width="200" height="400">
-<img src="/screenshots/camera-screen.png" width="200" height="400">
-<img src="/screenshots/profile-screen.png" width="200" height="400">
+<img src="/screenshots/home-screen.png" width="400" height="800">
+<img src="/screenshots/2.png" width="400" height="800">
+<img src="/screenshots/index-screen.png" width="400" height="800">
+<img src="/screenshots/camera-screen.png" width="400" height="800">
+<img src="/screenshots/profile-screen.png" width="400" height="800">
 
 
 
