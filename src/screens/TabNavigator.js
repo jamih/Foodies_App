@@ -4,6 +4,8 @@ import Feed from '../screens/Feed';
 import ProfileScreen from '../screens/ProfileScreen';
 import UploadScreen from '../screens/UploadScreen';
 import { Ionicons } from '@expo/vector-icons';
+import MapScreen from "./MapScreen";
+import { Foundation } from '@expo/vector-icons'; 
 
 const Tab = createBottomTabNavigator();
 
@@ -29,6 +31,16 @@ export default function TabNavigator() {
               }}
           />
               <Tab.Screen 
+              name='Map' 
+              component={MapScreen}  
+              options={{
+              tabBarIcon: (size) => (
+                <Foundation name="map" size={24} color="black" />
+              ),
+          }}
+          />
+          
+              <Tab.Screen 
               name='Me' 
               component={ProfileScreen}  
               options={{
@@ -37,7 +49,8 @@ export default function TabNavigator() {
               ),
           }}
           />
-          
+
+              
           </Tab.Navigator>
           
       ); 

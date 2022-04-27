@@ -6,3 +6,5 @@ export { default as Dashboard } from './Dashboard'
 export { default as AuthLoadingScreen } from './AuthLoadingScreen'
 export { default as Feed } from './Feed'
 export { default as TabNavigator } from './TabNavigator'
+export { default as MapScreen } from './MapScreen'
+

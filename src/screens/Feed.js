@@ -8,6 +8,7 @@ import Button from '../components/Button'
 import { logoutUser } from '../api/auth-api'
 import InfiniteScroll from 'react-infinite-scroll-component' 
 import FeedPic from '../components/FeedPic'
+import { MapScreen } from '../screens/MapScreen';
 
 export default function Feed() {
   return (
@@ -28,6 +29,7 @@ export default function Feed() {
         </ScrollView>
       </SafeAreaView>
     </SecondBackground>
+    
     
   ) }
     

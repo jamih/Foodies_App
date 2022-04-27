@@ -14,6 +14,7 @@ import {
   Dashboard,
   Feed,
   TabNavigator,
+  MapScreen,
 } from './src/screens'
 import { FIREBASE_CONFIG } from './src/core/config'
 
@@ -52,6 +53,7 @@ export default function App() {
               component={ResetPasswordScreen}
             />
             <Stack.Screen name="Feed" component={Feed} />
+            <Stack.Screen name="MapScreen" component={MapScreen} />
           </Stack.Navigator>
 
         </NavigationContainer>
