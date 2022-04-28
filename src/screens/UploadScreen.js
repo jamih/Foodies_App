@@ -4,9 +4,13 @@ import HeaderLogo from '../components/HeaderLogo';
 import SecondBackground from '../components/SecondBackground';
 import * as ImagePicker from "expo-image-picker";
 import * as Permissions from "expo-permissions";
-import { addPost } from '../api/auth-api'
+import { addPost, getUser } from '../api/auth-api'
 
 export default function UploadScreen() {
+
+  const user = getUser()
+
+  console.log(user)
 
   const [image, setImage] = useState(null)
   const [text, setText] = useState('')
@@ -35,32 +39,21 @@ export default function UploadScreen() {
   }
 
   handlePost = () => {
-    addPost({text: text.trim(), localUri: image}).then(ref => { setImage(null), setText('')}).catch(error => {alert(error)})
+    addPost({text: text.trim(), localUri: image, name: user.displayName}).then(ref => { setImage(null), setText('')}).catch(error => {alert(error)})
   }
 
   return (
       
-    // <SafeAreaView>
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Button title="Pick an image from camera roll" onPress={pickImage} />
-          {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Button title="Pick an image from camera roll" onPress={pickImage} />
+        {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
 
-          <TouchableOpacity onPress={handlePost()}>
+        <TouchableOpacity onPress={handlePost()}>
 
-            <Text> Post </Text>
+          <Text> Post </Text>
 
-          </TouchableOpacity>
-      </View>
-
-      // <View>
-      //   <TouchableOpacity onPress={handlePost()}>
-
-      //     <Text> Post </Text>
-
-      //   </TouchableOpacity>
-      // </View> 
-
-    // </SafeAreaView>
+        </TouchableOpacity>
+    </View>
 
   );
 }

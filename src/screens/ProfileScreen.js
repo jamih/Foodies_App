@@ -2,14 +2,18 @@ import React, { useEffect, useState } from 'react';
 import {Button, StyleSheet, Text, View, Image } from 'react-native';  
 import { logoutUser } from '../api/auth-api'
 import HeaderLogo from '../components/HeaderLogo';
+import { getUser } from '../api/auth-api'
 
 
 export default function ProfileScreen() {
+
+  const user = getUser()
+
     return (
         <View style={styles.container}>
             <HeaderLogo />
             <Image style={styles.pic} source={require('../assets/temp-profile.jpg')} />
-            <Text style={styles.username}>@username</Text>
+            <Text style={styles.username}>{user.displayName}</Text>
             <View style={styles.buttonContainer}>
             <Button onPress={logoutUser} title="Log Out" color="#FFFFFF" accessibilityLabel="Log Out"/>
             </View>

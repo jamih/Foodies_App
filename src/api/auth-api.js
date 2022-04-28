@@ -3,6 +3,14 @@ import 'firebase/auth'
 import 'firebase/firestore';
 import 'firebase/storage';
 
+export const getUser = () => {
+
+  const user = firebase.auth().currentUser
+
+  return user
+}
+
+
 export const logoutUser = () => {
   firebase.auth().signOut()
 }
@@ -77,7 +85,7 @@ export const uploadPhotoAsync = async uri => {
   });
 }
 
-export const addPost = async ({ text, localUri }) => {
+export const addPost = async ({ text, localUri, name }) => {
 
   const remoteUri = await uploadPhotoAsync(localUri)
 
@@ -85,7 +93,7 @@ export const addPost = async ({ text, localUri }) => {
 
     const db = firebase.firestore()
 
-    db.collection("posts").add({text, timestamp: Date.now(), image: remoteUri}).then(ref => { res(ref) }).catch(error => { rej(error)} );
+    db.collection("posts").add({text, timestamp: Date.now(), image: remoteUri, name: name}).then(ref => { res(ref) }).catch(error => { rej(error)} );
 
   })
 }
