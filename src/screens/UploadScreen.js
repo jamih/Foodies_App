@@ -6,6 +6,7 @@ import * as ImagePicker from "expo-image-picker";
 import * as Permissions from "expo-permissions";
 import { addPost, getUser } from '../api/auth-api'
 
+
 export default function UploadScreen() {
 
   const user = getUser()
@@ -44,16 +45,38 @@ export default function UploadScreen() {
 
   return (
       
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Button title="Pick an image from camera roll" onPress={pickImage} />
-        {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
+    // <SafeAreaView>
 
-        <TouchableOpacity onPress={handlePost()}>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center',  }}>
+        <HeaderLogo></HeaderLogo>
+          <Button title="Pick an image from camera roll" onPress={pickImage} />
+   
+          {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
 
-          <Text> Post </Text>
+
+         
+          <TouchableOpacity style={styles.button} onPress={handlePost()}>
+
+            <Text style={styles.buttonText}> Post </Text>
 
         </TouchableOpacity>
     </View>
 
   );
 }
+
+  const styles = StyleSheet.create( {
+    button: {
+      backgroundColor: "#DDDDDD",
+      padding: 10,
+    },
+
+    buttonText: {
+      fontWeight: 'bold',
+      fontSize: 18,
+    },
+    
+    
+
+
+  })
