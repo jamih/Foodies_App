@@ -3,6 +3,7 @@ import { Provider } from 'react-native-paper'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import firebase from 'firebase/app'
+import 'firebase/firestore';
 import 'firebase/auth'
 import { theme } from './src/core/theme'
 import {
