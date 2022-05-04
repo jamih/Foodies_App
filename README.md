@@ -10,7 +10,9 @@
 ### Table of Contents:
 * [Project Overview](#projectoverview)
 * [Initial Design](#initialdesign)
+* [Final Design](#finaldesign)
 * [Running the Project](#runningapp)
+* 
 
 <a name="projectoverview"></a> 
 ### Project Overview: ###
@@ -22,15 +24,22 @@
     * Users can tag the location of the restaurant for future reference.
 
 <a name="initialdesign"></a> 
-### Initial UI Design
+### Initial Design:
 
 When designing the app, we used Canva to visualize which buttons we wanted to include and what each of the screens would look like. Below is a diagram of the structure of the app:
 
 <img src="/screenshots/foodies-structure.png">
 
+<a name="finaldesign"></a> 
+### Final Design: ###
+Below is an overview on the final functionality and appearence of our app. 
+
+<img src="/screenshots/final_screens_1.png">
+<img src="/screenshots/final_screens_2.png">
+<img src="/screenshots/final_screens_3.png">
+
 <a name="runningapp"></a> 
- 
- ### Running the Project 
+### Running the Project: 
  
  * **Prerequisites:**
  * [Expo](https://docs.expo.dev/get-started/installation/)
