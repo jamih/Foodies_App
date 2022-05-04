@@ -1,3 +1,5 @@
+<img src="/screenshots/logo.png" width="300">
+
 # Foodies: *A personal diary for food.* 
 
 ## EC530 Final Project
@@ -12,7 +14,6 @@
 * [Initial Design](#initialdesign)
 * [Final Design](#finaldesign)
 * [Running the Project](#runningapp)
-* 
 
 <a name="projectoverview"></a> 
 ### Project Overview: ###
@@ -64,10 +65,3 @@ Make sure you have XCode installed before proceeding to the next steps.
 4. If you would like to run the app on your ios device, scan the qr code with your phone's camera. 
 5. If you would like to run the app on a ios simulator, click **i** to open the simulator. 
 6. The app should then be running on the simulator/ios device.
-
-
-
-
-
-
-
